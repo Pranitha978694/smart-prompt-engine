@@ -1,0 +1,91 @@
+{
+  "manifest_version": 3,
+  "name": "Promptly",
+  "version": "1.0",
+  "description": "Optimize your prompts with AI.",
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab",
+    "identity",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*",
+    "https://api.anthropic.com/*",
+    "https://api.openai.com/*",
+    "https://openrouter.ai/*",
+    "*://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon-16.png",
+      "32": "icon-32.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://www.chatgpt.com/*",
+        "https://chat.openai.com/chat/*",
+        "https://chat.openai.com/c/*",
+        "https://chatgpt.com/c/*",
+        "https://chatgpt.com/share/*",
+        "https://chat.openai.com/share/*",
+        "https://chat.openai.com/g/*",
+        "https://chatgpt.com/g/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://claude.ai/*",
+        "https://*.claude.ai/*"
+      ],
+      "js": [
+        "claude-content.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://gemini.google.com/*",
+        "https://gemini.google.com/app/*",
+        "https://gemini.google.com/chat/*",
+        "https://gemini.google.com/u/*"
+      ],
+      "js": [
+        "gemini-content.js"
+      ]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://generativelanguage.googleapis.com https://api.anthropic.com https://api.openai.com https://openrouter.ai https://*.clerk.accounts.dev https://api.clerk.com"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons8-bulb.gif",
+        "icon.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
