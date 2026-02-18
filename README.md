@@ -5,14 +5,14 @@
   <h3>Turn vague ideas into powerful prompts with one click.</h3>
 
   <p>
-    <a href="https://github.com/praneethreddie/promptly-extension-/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/praneethreddie/promptly-extension-?style=flat-square" alt="License">
+    <a href="https://github.com/pranithakankanala/promptly-extension-/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/pranithakankanala/promptly-extension-?style=flat-square" alt="License">
     </a>
-    <a href="https://github.com/praneethreddie/promptly-extension-/issues">
-      <img src="https://img.shields.io/github/issues/praneethreddie/promptly-extension-?style=flat-square" alt="Issues">
+    <a href="https://github.com/pranithakankanala/promptly-extension-/issues">
+      <img src="https://img.shields.io/github/issues/pranithakankanala/promptly-extension-?style=flat-square" alt="Issues">
     </a>
-    <a href="https://github.com/praneethreddie/promptly-extension-/stargazers">
-      <img src="https://img.shields.io/github/stars/praneethreddie/promptly-extension-?style=flat-square" alt="Stars">
+    <a href="https://github.com/pranithakankanala/promptly-extension-/stargazers">
+      <img src="https://img.shields.io/github/stars/pranithakanakanal/promptly-extension-?style=flat-square" alt="Stars">
     </a>
     <br />
     <a href="#features">Features</a> •
@@ -127,7 +127,7 @@ Want to contribute? Great! Here is how to add a new AI provider.
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/praneethreddie/promptly-extension-/issues).
+Feel free to check the [issues page](https://github.com/pranithakankanala/promptly-extension-/issues).
 
 ## 📄 License
 
@@ -136,5 +136,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ---
 
 <div align="center">
-  <b>Built with ❤️ by <a href="https://github.com/praneethreddie">Praneeth Reddie</a></b>
+  <b>Built with ❤️ by <a href="https://github.com/pranithakankanala">Praneeth Reddie</a></b>
 </div>
