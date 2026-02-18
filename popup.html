@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promptly Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Promptly Settings</h2>
+
+    <div class="form-group">
+      <label for="provider">Select AI Provider</label>
+      <select id="provider">
+        <option value="gemini">Google Gemini</option>
+        <option value="claude">Anthropic Claude</option>
+        <option value="openai">OpenAI (ChatGPT)</option>
+        <option value="custom">Custom (OpenAI Compatible)</option>
+        <option value="default">Default (Free)</option>
+      </select>
+    </div>
+
+    <div class="form-group api-key-group" id="gemini-group">
+      <label for="geminiKey">Gemini API Key</label>
+      <input type="password" id="geminiKey" placeholder="Enter Gemini API Key">
+    </div>
+
+    <div class="form-group api-key-group" id="claude-group" style="display: none;">
+      <label for="claudeKey">Claude API Key</label>
+      <input type="password" id="claudeKey" placeholder="Enter Claude API Key">
+    </div>
+
+    <div class="form-group api-key-group" id="openai-group" style="display: none;">
+      <label for="openaiKey">OpenAI API Key</label>
+      <input type="password" id="openaiKey" placeholder="Enter OpenAI API Key">
+    </div>
+
+    <div class="form-group api-key-group" id="custom-group" style="display: none;">
+      <label for="customName">Provider Name</label>
+      <input type="text" id="customName" placeholder="e.g. Local LLM">
+
+      <label for="customEndpoint">API Endpoint</label>
+      <input type="text" id="customEndpoint" placeholder="http://localhost:11434/v1/chat/completions">
+
+      <label for="customKey">API Key (Optional)</label>
+      <input type="password" id="customKey" placeholder="Enter API Key">
+    </div>
+
+    <button id="saveBtn">Save Settings</button>
+    <div id="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
